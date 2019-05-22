@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <title>Wanna Talk?</title>
     </head>
-    <body style="background-image:url(logo.png);background-repeat:no-repeat;background-position:top">
+    <body style="background-image:url(../static/logo.png);background-repeat:no-repeat;background-position:top">
         <h1 align="center" style="color-adjust: economy;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 0.5in">Call Me ;)</h1>
         <br>
         <br>
         <div style='display: inline-flexbox'>
-                <a href="blog.html" style="display:inline-block;width:33%;" align="left">Blog Page</a>
-                <a href="home.html" style="display:inline-block;width: 33%;" align="center">Home Page</a>
-                <a href="contactus.html" style="display:inline-block;width: 33%;" align="right">Contact Us</a>
+                <a href="{{ url_for('blog') }}" style="display:inline-block;width:33%;" align="left">Blog Page</a>
+                <a href="{{ url_for('home') }}" style="display:inline-block;width: 33%;" align="center">Home Page</a>
+                <a href="{{ url_for('contactus') }}" style="display:inline-block;width: 33%;" align="right">Contact Us</a>
         </div>
         <br>
         <br>
